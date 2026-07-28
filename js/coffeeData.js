@@ -1,16 +1,16 @@
 const coffeeData = [
     {
         id: "TCJ • 001",
-        name: "Attikan Estate",
+        name: "Seethargundu Estate-Light",
         roaster: "Blue Tokai Coffee Roasters",
-        origin: "India",
+        origin: "Nelliyampathy@KL",
         process: "Washed",
-        brew: "V60",
-        roast: "Medium",
+        brew: "Cold Brew",
+        roast: "Light",
         rating: "★★★★★",
-        date: "12 Apr 2025",
+        date: "1100-1200 mt",
         reviewTitle: "Clean, Balanced & Comforting.",
-        review: "A beautifully balanced cup with notes of dark chocolate, roasted almonds and dried berries. Smooth body with a clean finish."
+        review: "A beautifully balanced cup with notes of Orange, Peach and Black Tea. Smooth body with a clean finish."
     },
 
     {
