@@ -1,0 +1,263 @@
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    height:calc(100vh - 82px);
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0;
+
+    overflow:hidden;
+
+}
+
+.hero-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    margin-top: -30px;
+
+} 
+
+.hero-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+}
+
+/* LEFT */
+
+.journal-author{
+
+    font-size:.95rem;
+
+    color:var(--color-text);
+
+    margin-bottom:4px;
+}
+
+.journal-role{
+
+    font-size:.85rem;
+
+    color:var(--color-accent);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:28px;
+}
+
+.hero h1{
+
+    font-size:4.3rem;
+
+    line-height:.92;
+
+    margin-bottom:35px;
+}
+
+.hero h1 span{
+
+    display:block;
+}
+
+.hero-description{
+
+    max-width:470px;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+}
+
+/* LINK */
+
+.hero-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    font-weight:600;
+
+    color:var(--color-heading);
+
+    margin-bottom:40px;
+}
+
+.hero-line{
+
+    width:70px;
+
+    height:2px;
+
+    background:var(--color-heading);
+
+    transition:.35s;
+}
+
+.arrow{
+
+    transition:.35s;
+}
+
+.hero-link:hover .hero-line{
+
+    width:110px;
+}
+
+.hero-link:hover .arrow{
+
+    transform:translateX(6px);
+}
+
+/* QUOTE */
+
+.hero-quote{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:1.45rem;
+
+    font-style:italic;
+
+    color:#9b8a79;
+
+    opacity:.82;
+
+    margin-top:35px;
+
+}
+
+/* IMAGE */
+
+.hero-image{
+
+    position:relative;
+    margin-top: -20px;
+
+}
+
+.hero-image img{
+
+    width:600px;
+
+    height:580px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow-lg);
+
+    display:block;
+}
+
+/* BREW CARD */
+
+.brew-card{
+
+    position:absolute;
+
+    left:20px;
+
+    bottom:30px;
+
+    width:300px;
+
+    background:white;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow-lg);
+}
+
+.brew-card span{
+
+    display:block;
+
+    font-size:.78rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:var(--color-accent);
+
+    margin-bottom:18px;
+}
+
+.brew-card h3{
+
+    margin-bottom:18px;
+
+    font-size:1.5rem;
+}
+
+.brew-card p{
+
+    line-height:1.7;
+}
+
+.brew-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-top:20px;
+}
+
+.brew-details strong{
+
+    display:block;
+
+    font-size:.75rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    color:var(--color-accent);
+
+    margin-bottom:4px;
+}
+
+.brew-details p{
+
+    font-size:.9rem;
+
+    line-height:1.6;
+
+    margin:0;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}

@@ -1,0 +1,1663 @@
+/*=========================================================
+                PASSPORT SECTION
+=========================================================*/
+
+.passport-section{
+
+    padding:100px 0 120px;
+
+    background:var(--background);
+
+    margin-top: -100px;
+
+}
+
+.passport-section .section-heading{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    margin-bottom: 60px;
+
+}
+
+.passport-section .chapter{
+
+    display:block;
+
+    margin-bottom:16px;
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+
+    color:#986132;
+
+}
+
+.passport-section h2{
+
+    font-size:4rem;
+
+    line-height:.95;
+
+    margin-bottom:18px;
+
+}
+
+.passport-section p{
+
+    color:#707070;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+}
+
+/*=========================================================
+GRID
+=========================================================*/
+
+.passport-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:22px;
+
+    max-width:1650px;
+    
+    margin:0 auto;
+
+    padding: 0 40px;
+
+}
+
+/*=========================================================
+CARD
+=========================================================*/
+
+.passport-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    height:208px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    will-change: transform,
+                 box-shadow;
+
+    background:
+
+    radial-gradient(circle at top left,
+    rgba(255,255,255,.75),
+    transparent 35%),
+
+    linear-gradient(
+    180deg,
+    #fbf8f3,
+    #f3e7d5);
+
+    border:1px solid rgba(178,145,104,.18);
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:
+
+    transform .28s,
+
+    box-shadow .28s;
+
+}
+
+.passport-card:hover{
+
+    transform:
+        translateY(-10px)
+        rotate(-0.4deg);
+
+    box-shadow:
+        0 28px 55px rgba(0,0,0,.14),
+        0 8px 20px rgba(150,110,70,.08);
+
+    border-color:rgba(168,120,70,.28);
+
+}
+
+/*=========================================================
+TEXTURE
+=========================================================*/
+
+.passport-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.07;
+
+    background-image:
+
+    radial-gradient(#7d5d39 .6px,transparent .6px);
+
+    background-size:18px 18px;
+
+    transition:
+        opacity .35s ease;
+
+}
+
+.passport-card:hover::before{
+
+    opacity:.14;
+
+}
+
+.passport-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-75px;
+
+    bottom:-75px;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(148,108,60,.10),
+
+    transparent 70%);
+
+}
+
+/*=========================================================
+HEADER
+=========================================================*/
+
+.passport-header{
+
+    display:grid;
+
+    grid-template-columns:72px 1fr;
+
+    gap:16px;
+
+    padding:18px;
+
+    align-items:start;
+
+}
+
+/*=========================================================
+STAMP
+=========================================================*/
+
+.passport-stamp{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    border:1.6px solid #9b642f;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transform:rotate(-12deg);
+
+    color:#9b642f;
+
+    flex-shrink:0;
+
+    transition:.3s;
+
+}
+
+.passport-card:hover .passport-stamp{
+
+    transform:
+        rotate(-4deg)
+        scale(1.08);
+
+    transition:
+        transform .45s cubic-bezier(.22,1,.36,1);
+
+}
+
+.passport-stamp::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:4px;
+
+    border:1.6px solid #9b642f;
+
+    border-radius:50%;
+
+}
+
+.stamp-top{
+
+    font-size:.34rem;
+
+    letter-spacing:1.2px;
+
+}
+
+.passport-stamp strong{
+
+    font-size:.62rem;
+
+    line-height:1.1;
+
+}
+
+.stamp-bottom{
+
+    font-size:.34rem;
+
+    letter-spacing:1.2px;
+
+}
+
+/*=========================================================
+CONTENT
+=========================================================*/
+
+.passport-content{
+
+    min-width:0;
+
+}
+
+.passport-id{
+
+    display:block;
+
+    font-size:.58rem;
+
+    letter-spacing:3px;
+
+    color:#8d5a2b;
+
+    margin-bottom:8px;
+
+}
+
+.passport-content h3{
+
+    font-size:1.18rem;
+
+    line-height:1.08;
+
+    margin-bottom:8px;
+
+    text-wrap:balance;
+
+    transition:
+        letter-spacing .3s ease,
+        color .3s ease;
+
+}
+
+.passport-card:hover h3{
+
+    letter-spacing:.25px;
+
+}
+
+.passport-line{
+
+    width:72px;
+
+    height:1px;
+
+    background:#c8ab87;
+
+    margin-bottom:8px;
+
+    transition:
+        width .35s ease,
+        background .35s ease;
+
+}
+
+.passport-card:hover .passport-line{
+
+    width:110px;
+
+    background:#986132;
+
+}
+
+.passport-content p{
+
+    font-size:.72rem;
+
+    line-height:1.55;
+
+    color:#5b5b5b;
+
+    transition: color .35s ease;
+
+}
+
+.passport-card:hover .passport-content p{
+
+    color:#333;
+
+}
+
+/*=========================================================
+FOOTER
+=========================================================*/
+
+.passport-footer{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    border-top:1px solid rgba(0,0,0,.06);
+
+    background:rgba(255,255,255,.18);
+
+    padding:10px 0;
+
+    transition:
+        background .35s ease;
+
+}
+
+.passport-card:hover .passport-footer{
+
+    background:rgba(255,255,255,.35);
+
+}
+
+.passport-footer div{
+
+    text-align:center;
+
+    border-right:1px dashed rgba(150,110,70,.20);
+
+}
+
+.passport-footer div:last-child{
+
+    border-right:none;
+
+}
+
+.passport-footer small{
+
+    display:block;
+
+    margin-bottom:4px;
+
+    font-size:.50rem;
+
+    letter-spacing:1.5px;
+
+    color:#966236;
+
+}
+
+.passport-footer strong{
+
+    font-size:.72rem;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+/*=========================================================
+VIEW MORE
+=========================================================*/
+
+.passport-more{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:40px;
+
+}
+
+.passport-more button{
+
+    padding:14px 38px;
+
+    border-radius:999px;
+
+    border:1px solid #b98a5d;
+
+    background:transparent;
+
+    color:#8b5b2d;
+
+    font-size:.82rem;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.passport-more button:hover{
+
+    background:#8b5b2d;
+
+    color:#fff;
+
+}
+
+/*=========================================================
+MODAL
+=========================================================*/
+
+.passport-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+    background:rgba(20,20,20,.28);
+
+    backdrop-filter:blur(0px);
+
+    -webkit-backdrop-filter:blur(0px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+
+        opacity .35s ease,
+
+        backdrop-filter .45s ease,
+
+        -webkit-backdrop-filter .45s ease;
+
+    z-index:9999;
+
+}
+
+.passport-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    backdrop-filter:blur(8px);
+
+    -webkit-backdrop-filter:blur(8px);
+
+}
+
+.passport-modal-card{
+
+    position:relative;
+
+    width:min(1050px,95vw);
+
+    display:grid;
+
+    grid-template-columns:210px 1fr 290px;
+
+    background:#fbf8f3;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 45px 90px rgba(0,0,0,.22);
+
+    transform:
+
+        scale(.94)
+
+        translateY(25px);
+
+    opacity:0;
+
+    transition:
+
+        transform .45s cubic-bezier(.22,1,.36,1),
+
+        opacity .35s ease;
+
+}
+
+.passport-modal.active .passport-modal-card{
+
+    transform:
+
+        scale(1)
+
+        translateY(0);
+
+    opacity:1;
+
+}
+
+.modal-left{
+
+    padding:36px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    border-right:1px solid rgba(0,0,0,.06);
+
+}
+
+.passport-stamp.large{
+
+    width:145px;
+
+    height:145px;
+
+}
+
+.passport-stamp.large strong{
+
+    font-size:1rem;
+
+}
+
+.passport-stamp.large .stamp-top,
+
+.passport-stamp.large .stamp-bottom{
+
+    font-size:.58rem;
+
+}
+
+.modal-center{
+
+    padding:42px 46px;
+
+}
+
+#modal-id{
+
+    display:block;
+
+    letter-spacing:4px;
+
+    font-size:.82rem;
+
+    color:#986132;
+
+    margin-bottom:16px;
+
+}
+
+#modal-name{
+
+    font-size:3.3rem;
+
+    line-height:1;
+
+    margin-bottom:14px;
+    
+    transition: .35s;
+
+}
+
+#modal-roaster{
+
+    color:#666;
+
+    margin-bottom:28px;
+
+}
+
+#modal-review-title{
+
+    font-size:2rem;
+
+    font-style:italic;
+
+    margin-bottom:18px;
+
+}
+
+#modal-review{
+
+    line-height:1.9;
+
+    color:#555;
+
+    transition: 0.35s;
+
+}
+
+.modal-right{
+
+    padding:42px;
+
+    border-left:1px solid rgba(0,0,0,.06);
+
+}
+
+.modal-rating{
+
+    color:#986132;
+
+    font-size:1.3rem;
+
+    margin-bottom:30px;
+
+    transition: .35s;
+
+}
+
+.modal-right ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.modal-right li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:18px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(0,0,0,.06);
+
+}
+
+.modal-right strong{
+
+    color:#333;
+
+}
+
+.modal-right span{
+
+    color:#666;
+
+    text-align:right;
+
+}
+
+.passport-close{
+
+    position:absolute;
+
+    right:20px;
+
+    top:18px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.04);
+
+    color:#555;
+
+    font-size:1.4rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.passport-close:hover{
+
+    background:#986132;
+
+    color:white;
+
+    transform:rotate(90deg);
+
+}
+
+/*=========================================================
+RESPONSIVE
+=========================================================*/
+
+@media(max-width:1400px){
+
+.passport-grid{
+
+grid-template-columns:repeat(4,minmax(90px,1fr));
+
+}
+
+}
+
+@media(max-width:1100px){
+
+.passport-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.passport-modal-card{
+
+grid-template-columns:1fr;
+
+}
+
+.modal-left,
+
+.modal-right{
+
+border:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.passport-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.passport-section h2{
+
+font-size:3rem;
+
+}
+
+.passport-card{
+
+height:190px;
+
+}
+
+.passport-header{
+
+grid-template-columns:60px 1fr;
+
+gap:12px;
+
+padding:14px;
+
+}
+
+.passport-stamp{
+
+width:60px;
+
+height:60px;
+
+}
+
+.passport-content h3{
+
+font-size:1rem;
+
+}
+
+.passport-content p{
+
+font-size:.65rem;
+
+}
+
+.passport-footer strong{
+
+font-size:.65rem;
+
+}
+
+}
+
+@media(max-width:520px){
+
+.passport-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/*=========================================================
+SCROLL REVEAL
+=========================================================*/
+
+.passport-card{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s cubic-bezier(.2,.8,.2,1),
+        box-shadow .3s ease,
+        transform .3s ease;
+
+}
+
+.passport-card.reveal{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.passport-modal.active .passport-stamp{
+
+    animation:stampPop .6s ease;
+
+}
+
+@keyframes stampPop{
+
+    0%{
+
+        transform:
+
+            rotate(-18deg)
+
+            scale(.75);
+
+        opacity:0;
+
+    }
+
+    60%{
+
+        transform:
+
+            rotate(-8deg)
+
+            scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+
+            rotate(-12deg)
+
+            scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*=========================================================
+COLLECTION
+=========================================================*/
+
+.passport-collection{
+
+    max-width:520px;
+
+    margin:40px auto 35px;
+
+    text-align:center;
+
+}
+
+.collection-line{
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(170,140,110,.20);
+
+}
+
+#collectionText{
+
+    padding:28px 0;
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:2rem;
+
+    line-height:1.7;
+
+    font-style:italic;
+
+    color:#4b3a2d;
+
+}
+
+/*=========================================================
+COLLECTION ANIMATION
+=========================================================*/
+
+.passport-collection{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.passport-collection.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+#collectionText span{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:1.45rem;
+
+    color:#8b7054;
+
+}
+
+/*=========================================================
+                    BREWING JOURNAL
+=========================================================*/
+
+.brews-section{
+    padding:120px 0;
+    background:var(--background);
+}
+
+/*------------------------------
+Heading
+------------------------------*/
+
+.brews-heading{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.brews-heading .chapter{
+    display:block;
+    margin-bottom:18px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    font-size:.8rem;
+    color:#986132;
+}
+
+.brews-heading h2{
+    font-size:4rem;
+    line-height:.95;
+    margin-bottom:18px;
+}
+
+.brews-heading p{
+    font-size:1.1rem;
+    color:#6f6f6f;
+    line-height:1.8;
+}
+
+/*=========================================================
+                FEATURED BREW
+=========================================================*/
+
+.featured-brew{
+
+    max-width:1100px;
+
+    margin:0 auto 70px;
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    align-items:stretch;
+
+    background:#fbf8f3;
+
+    border:1px solid rgba(180,145,105,.18);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
+
+}
+
+/*--------------------------------*/
+
+.featured-image{
+
+    position:relative;
+
+    height:100%;
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/*--------------------------------*/
+
+.featured-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:40px;
+
+}
+
+.brew-tag{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#efe2d0;
+
+    color:#8b5b2d;
+
+    font-size:.75rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:26px;
+
+}
+
+.featured-content h3{
+
+    font-size:3.2rem;
+
+    margin-bottom:28px;
+
+    line-height:1;
+
+}
+
+/*=========================================================
+                    SPECS
+=========================================================*/
+
+.brew-specs{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    margin-bottom:30px;
+
+    border-top:1px solid #ebe3d7;
+
+    border-bottom:1px solid #ebe3d7;
+
+}
+
+.brew-specs div{
+
+    padding:22px 12px;
+
+    text-align:center;
+
+}
+
+.brew-specs div:not(:last-child){
+
+    border-right:1px solid #ebe3d7;
+
+}
+
+.brew-specs small{
+
+    display:block;
+
+    color:#9a9a9a;
+
+    font-size:.65rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:8px;
+
+}
+
+.brew-specs strong{
+
+    font-size:1.15rem;
+
+}
+
+.recipe-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    margin-top:18px;
+
+    padding:0;
+
+    border:none;
+
+    background:none;
+
+    color:#8b5b2d;
+
+    cursor:pointer;
+
+    letter-spacing:1px;
+}
+
+.recipe-btn:hover{
+
+    transform:translateX(6px);
+
+}
+
+/*=========================================================
+                    GRID
+=========================================================*/
+
+.brew-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+/*=========================================================
+                    BREW CARDS
+=========================================================*/
+
+.brew-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+/*--------------------------------*/
+
+.brew-journal-card{
+
+    background:#fbf8f3;
+
+    border:1px solid rgba(180,145,105,.18);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.06);
+
+}
+
+.brew-journal-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.09);
+
+}
+
+/*--------------------------------*/
+
+.brew-image{
+
+    height:155px;
+
+    overflow:hidden;
+
+}
+
+.brew-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s;
+
+}
+
+.brew-journal-card:hover img{
+
+    transform:scale(1.04);
+
+}
+
+/*--------------------------------*/
+
+.brew-journal-content{
+
+    padding:18px 20px 20px;
+
+}
+
+.brew-journal-content h3{
+
+    font-size:1.55rem;
+
+    margin-bottom:8px;
+
+}
+
+.brew-subtitle{
+
+    color:#777;
+
+    font-size:.82rem;
+
+    margin-bottom:20px;
+
+}
+
+/*--------------------------------*/
+
+.brew-view{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:10px;
+
+    padding:0;
+
+    border:none;
+
+    background:none;
+
+    color:#8b5b2d;
+
+    font-size:.82rem;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.brew-view:hover{
+
+    gap:14px;
+
+    color:#6d431d;
+
+}
+
+.brew-description{
+
+    margin:26px 0;
+
+    font-size:1.15rem;
+
+    line-height:1.7;
+
+    color:#555;
+
+    max-width:520px;
+
+}
+
+.daily-driver{
+
+    position:absolute;
+
+    bottom:18px;
+
+    left:18px;
+
+    width:86px;
+
+    height:86px;
+
+    border-radius:50%;
+
+    background:#8b5b2d;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:4px;
+
+    font-size:.62rem;
+
+    letter-spacing:1px;
+
+    text-align:center;
+
+}
+
+.daily-driver span{
+
+    line-height:1.2;
+
+}
+
+/* ===========================
+   RECIPE MODAL
+=========================== */
+
+.recipe-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(10px);
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+    z-index:9999;
+}
+
+.recipe-modal.active{
+    display:flex;
+}
+
+.recipe-container{
+    width:min(1100px,95vw);
+    height:min(750px,90vh);
+
+    background:#f8f5ef;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:280px 1fr;
+
+    position:relative;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.recipe-close{
+    position:absolute;
+
+    right:25px;
+    top:20px;
+
+    border:none;
+    background:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#4a3b2f;
+}
+
+/* Sidebar */
+
+.recipe-sidebar{
+    background:#efe8dc;
+
+    padding:35px;
+
+    overflow-y:auto;
+
+    border-right:1px solid rgba(0,0,0,.08);
+}
+
+.recipe-sidebar h2{
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    color:#3a2d23;
+}
+
+#recipeList{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.recipe-item{
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    background:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.recipe-item:hover{
+    transform:translateX(5px);
+}
+
+.recipe-item.active{
+    background:#5f4633;
+    color:white;
+}
+
+/* Content */
+
+.recipe-content{
+    padding:45px;
+
+    overflow-y:auto;
+}
+
+.recipe-content h3{
+    font-size:2.2rem;
+
+    margin-bottom:25px;
+}
+
+.recipe-specs{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-bottom:40px;
+}
+
+.recipe-spec{
+    background:white;
+
+    padding:16px;
+
+    border-radius:12px;
+}
+
+.recipe-spec span{
+    display:block;
+
+    font-size:.85rem;
+
+    opacity:.6;
+
+    margin-bottom:6px;
+}
+
+.recipe-content h4{
+    margin-top:35px;
+    margin-bottom:12px;
+
+    font-size:1.1rem;
+}
+
+#recipeSteps{
+    padding-left:22px;
+
+    line-height:1.9;
+}
+
+#recipeNotes{
+    line-height:1.8;
+}
+
+#recipeTaste{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+    margin-top:10px;
+}
+
+#recipeTaste span{
+    background:#ede2d1;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:.9rem;
+}
+
+@media(max-width:900px){
+
+    .recipe-container{
+
+        grid-template-columns:1fr;
+
+        height:90vh;
+    }
+
+    .recipe-sidebar{
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(0,0,0,.08);
+    }
+
+}

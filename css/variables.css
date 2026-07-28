@@ -1,0 +1,94 @@
+/* ==========================================
+   THE COFFEE JOURNAL
+   Design System
+========================================== */
+
+:root {
+
+    /* ========================
+       COLORS
+    ======================== */
+
+    --color-background: #F7F3EE;
+    --color-surface: #FFFFFF;
+
+    --color-heading: #1B1B1B;
+    --color-text: #5C5C5C;
+
+    --color-accent: #B58A56;
+    --color-accent-hover: #9A7242;
+
+    --color-border: #E7DDD2;
+
+    /* ========================
+       TYPOGRAPHY
+    ======================== */
+
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Inter", sans-serif;
+
+    /* ========================
+       FONT SIZES
+    ======================== */
+
+    --fs-xs: 0.875rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2.5rem;
+    --fs-2xl: 4rem;
+    --fs-3xl: 5.5rem;
+
+    /* ========================
+       FONT WEIGHTS
+    ======================== */
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* ========================
+       SPACING
+    ======================== */
+
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+    --space-2xl: 8rem;
+
+    /* ========================
+       BORDER RADIUS
+    ======================== */
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 40px;
+
+    /* ========================
+       SHADOWS
+    ======================== */
+
+    --shadow-sm: 0 4px 12px rgba(0,0,0,.05);
+
+    --shadow-md: 0 10px 30px rgba(0,0,0,.08);
+
+    --shadow-lg: 0 20px 60px rgba(0,0,0,.12);
+
+    /* ========================
+       CONTAINER
+    ======================== */
+
+    --container-width: 1240px;
+
+    /* ========================
+       TRANSITIONS
+    ======================== */
+
+    --transition: all .35s ease;
+
+}

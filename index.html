@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Coffee Journal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/story.css" />
+    <link rel="stylesheet" href="css/passport.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <span class="logo-title"> The Coffee Journal </span>
+
+          <span class="logo-author"> by Bhavya Balchandani </span>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#passport">Passport</a></li>
+            <li><a href="#brews">Brews</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================
+             HERO
+        ========================== -->
+
+      <section id="home" class="hero">
+        <div class="container hero-container">
+          <!-- LEFT -->
+          <div class="hero-content">
+            <h1>
+              <span>A Journey Into</span>
+              <span>Specialty Coffee</span>
+            </h1>
+
+            <p class="hero-description">
+              This journal captures the cafés I visit, the coffees I brew, and
+              the stories I discover along the way.
+            </p>
+
+            <a href="#story" class="hero-link">
+              <span>Open the Journal</span>
+
+              <div class="hero-line"></div>
+
+              <span class="arrow">→</span>
+            </a>
+
+            <p class="hero-quote">"The best stories begin with curiosity."</p>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="hero-image">
+            <img src="images/hero.jpg" alt="Pour over coffee" />
+
+            <div class="brew-card">
+              <span>CURRENT CAFFEINE OBSESSION</span>
+
+              <h3>Ethiopia Yirgacheffe</h3>
+
+              <div class="brew-details">By Blue Tokai Coffee Roasters</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             STORY
+        ========================== -->
+
+      <section id="story" class="story">
+        <div class="container">
+          <div class="story-header">
+            <p class="story-chapter">CHAPTER II</p>
+
+            <h2>Why I Keep Coming Back to Coffee?</h2>
+          </div>
+
+          <div class="story-content">
+            <!-- LEFT -->
+
+            <div class="story-left">
+              <div class="story-divider"></div>
+
+              <blockquote>
+                “I never planned to fall in love with specialty coffee.”
+              </blockquote>
+
+              <p>
+                It started with curiosity. A different café. A brewing method
+                I'd never tried. A bag of beans from somewhere I'd never heard
+                of.
+              </p>
+
+              <p>
+                Somewhere between early mornings, failed brews, conversations
+                with baristas, and discovering origins from across the world,
+                coffee became more than a drink.
+              </p>
+
+              <p>It became a ritual.</p>
+
+              <p>
+                This journal exists because I never stopped asking questions
+                about coffee.
+              </p>
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="story-right">
+              <div class="polaroid">
+                <img src="images/hero.jpg" alt="Coffee" />
+
+                <div class="polaroid-caption">
+                  <h4>First morning with my AeroPress.</h4>
+
+                  <span>Delhi • 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VALUES -->
+
+          <div class="story-values">
+            <div class="value-intro">
+              <h3>
+                Coffee, to me,<br />
+                is about more<br />
+                than caffeine.
+              </h3>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">⌕</div>
+
+              <h4>Curiosity</h4>
+
+              <p>Every cup teaches something new.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">◌</div>
+
+              <h4>Exploration</h4>
+
+              <p>Every origin tells a different story.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="icon">⌬</div>
+
+              <h4>Craftsmanship</h4>
+
+              <p>Great coffee rewards patience.</p>
+            </div>
+          </div>
+
+          <!-- FOOTER QUOTE -->
+
+          <div class="story-ending">
+            <span>❝</span>
+
+            <p>
+              This journal isn't about coffee.<br />
+              It's about paying attention.
+            </p>
+
+            <span>❞</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+COFFEE PASSPORT
+=========================================================== -->
+
+      <section id="passport" class="passport-section">
+        <div class="section-heading center">
+          <span class="chapter">CHAPTER III</span>
+
+          <h2>Coffee Passport</h2>
+
+          <p>
+            A growing collection of coffees that have earned a permanent place
+            in my journal.
+          </p>
+        </div>
+
+        <div class="passport-collection">
+          <div class="collection-line"></div>
+
+          <p id="collectionText"></p>
+
+          <div class="collection-line"></div>
+        </div>
+
+        <!-- PASSPORTS WILL BE GENERATED HERE -->
+        <div class="passport-grid" id="passportGrid"></div>
+
+        <div class="passport-more">
+          <button id="loadMorePassport">VIEW MORE</button>
+        </div>
+      </section>
+      <!-- ==========================================================
+PASSPORT MODAL
+=========================================================== -->
+
+      <div class="passport-modal">
+        <div class="passport-modal-card">
+          <button class="passport-close">&times;</button>
+
+          <div class="modal-left">
+            <div class="passport-stamp large">
+              <span class="stamp-top">SPECIALITY</span>
+
+              <strong>TCJ</strong>
+
+              <strong>APPROVED</strong>
+
+              <span class="stamp-bottom">COFFEE</span>
+            </div>
+          </div>
+
+          <div class="modal-center">
+            <span id="modal-id"></span>
+
+            <h2 id="modal-name"></h2>
+
+            <p id="modal-roaster"></p>
+
+            <h4 id="modal-review-title"></h4>
+
+            <p id="modal-review"></p>
+          </div>
+
+          <div class="modal-right">
+            <div class="modal-rating">
+              <span id="modal-rating"></span>
+            </div>
+
+            <ul>
+              <li>
+                <strong>Origin</strong>
+
+                <span id="modal-origin"></span>
+              </li>
+
+              <li>
+                <strong>Process</strong>
+
+                <span id="modal-process"></span>
+              </li>
+
+              <li>
+                <strong>Brewed With</strong>
+
+                <span id="modal-brew"></span>
+              </li>
+
+              <li>
+                <strong>Roast</strong>
+
+                <span id="modal-roast"></span>
+              </li>
+
+              <li>
+                <strong>Date Tried</strong>
+
+                <span id="modal-date"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--=========================================================
+BREWING JOURNAL
+==========================================================-->
+
+      <section id="brews" class="brews-section">
+        <div class="container">
+          <div class="brews-heading">
+            <span class="chapter">CHAPTER IV</span>
+
+            <h2>Brewing Journal</h2>
+
+            <p>
+              Every coffee changes with a different recipe. These are the brews
+              I keep coming back to.
+            </p>
+          </div>
+
+          <!-- Featured Brew -->
+
+          <div class="featured-brew">
+            <div class="featured-image">
+              <img src="images/hero.jpg" alt="AeroPress" />
+
+              <div class="daily-driver">
+                ★
+
+                <span>DAILY<br />DRIVER</span>
+              </div>
+            </div>
+
+            <div class="featured-content">
+              <span class="brew-tag"> ★ Personal Favourite </span>
+
+              <h3>AeroPress</h3>
+
+              <div class="brew-specs">
+                <div>
+                  <small>Ratio</small>
+                  <strong>1:15</strong>
+                </div>
+
+                <div>
+                  <small>Grind</small>
+                  <strong>Medium Fine</strong>
+                </div>
+
+                <div>
+                  <small>Water</small>
+                  <strong>92°C</strong>
+                </div>
+
+                <div>
+                  <small>Time</small>
+                  <strong>2:10</strong>
+                </div>
+              </div>
+
+              <p class="brew-description">
+                Sweet, syrupy and incredibly forgiving. My favourite way to
+                start the morning.
+              </p>
+
+              <button class="recipe-btn" id="featuredRecipeBtn">
+                View Recipes →
+              </button>
+            </div>
+          </div>
+
+          <!-- Brew Cards -->
+
+          <div class="brew-grid">
+            <!-- JS will generate cards -->
+          </div>
+        </div>
+      </section>
+
+      <!--=========================================================
+RECIPE MODAL
+==========================================================-->
+
+      <div class="recipe-modal" id="recipeModal">
+        <div class="recipe-container">
+          <button class="recipe-close" id="closeRecipe">&times;</button>
+
+          <div class="recipe-sidebar">
+            <h2 id="modalBrewerName"></h2>
+
+            <div id="recipeList"></div>
+          </div>
+
+          <div class="recipe-content">
+            <h3 id="recipeTitle"></h3>
+
+            <div class="recipe-specs" id="recipeSpecs"></div>
+
+            <h4>Brewing Steps</h4>
+
+            <ol id="recipeSteps"></ol>
+
+            <h4>Notes</h4>
+
+            <p id="recipeNotes"></p>
+
+            <h4>Taste Notes</h4>
+
+            <div id="recipeTaste"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--=========================================================
+GALLERY
+==========================================================-->
+
+<section class="gallery-section" id="gallery">
+
+    <div class="container">
+
+        <div class="gallery-heading">
+
+            <span class="chapter">CHAPTER V</span>
+
+            <h2>Gallery</h2>
+
+            <p>
+                Every photograph in this journal reminds me that coffee
+                is more than a drink—it's the places, people and quiet
+                moments surrounding every cup.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid"></div>
+
+        <div class="gallery-button">
+
+            <button id="viewMoreBtn">
+                View More
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ LIGHTBOX ================-->
+
+<div class="gallery-lightbox" id="galleryLightbox">
+
+    <button id="closeLightbox" class="lightbox-close">&times;</button>
+
+    <div class="lightbox-content">
+
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+
+        <img id="lightboxImage">
+
+        <h3 id="lightboxTitle"></h3>
+
+        <p id="lightboxDescription"></p>
+
+        <div class="lightbox-nav">
+
+            <button id="prevImage">← Previous</button>
+
+            <button id="nextImage">Next →</button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ==========================================
+     CONTACT
+========================================== -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-heading">
+
+            <span class="chapter">CHAPTER VI</span>
+
+            <h2>Until the Next Cup</h2>
+
+            <div class="heading-divider">
+                <span></span>
+                <i class="fa-solid fa-seedling"></i>
+                <span></span>
+            </div>
+
+            <p>
+                Whether you have a café recommendation, a brewing tip,
+                a story worth sharing, or simply want to say hello,
+                I'd love to hear from you.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <a href="mailto:your@email.com" class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <h3>Email</h3>
+
+                <div class="card-line"></div>
+
+                <p class="main">
+                    your@email.com
+                </p>
+
+                <p class="sub">
+                    I usually reply within 24–48 hours.
+                </p>
+
+            </a>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <h3>Location</h3>
+
+                <div class="card-line"></div>
+
+                <p class="main">
+                    Delhi, India
+                </p>
+
+                <p class="sub">
+                    Brewing, exploring and documenting from here.
+                </p>
+
+            </div>
+
+
+            <a href="#" class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <h3>Instagram</h3>
+
+                <div class="card-line"></div>
+
+                <p class="main">
+                    @the.coffee.journal
+                </p>
+
+                <p class="sub">
+                    Coffee moments & behind the scenes.
+                </p>
+
+            </a>
+
+
+            <a href="#" class="contact-card">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <h3>Goodreads</h3>
+
+                <div class="card-line"></div>
+
+                <p class="main">
+                    The Coffee Journal
+                </p>
+
+                <p class="sub">
+                    Books that inspire every journey.
+                </p>
+
+            </a>
+
+        </div>
+
+
+        <div class="epilogue">
+
+            <div class="epilogue-image">
+
+                <img src="assets/images/contact.jpg" alt="Coffee notebook">
+
+            </div>
+
+
+            <div class="epilogue-text">
+
+                <span>EPILOGUE</span>
+
+                <p>
+
+                    Every journal tells one story.<br>
+
+                    Coffee became this one.<br>
+
+                    Building things became another.
+
+                </p>
+
+            </div>
+
+
+            <a href="https://yourportfolio.com"
+               target="_blank"
+               class="developer-link">
+
+                <div class="developer-icon">
+
+                    <i class="fa-solid fa-code"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>The Developer Behind the Brewer</h3>
+
+                    <p>
+                        Explore my web development portfolio.
+                    </p>
+
+                </div>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+    <footer class="footer">
+
+    <div class="container footer-container">
+
+        <h2>The Coffee Journal</h2>
+
+        <p>
+            Crafted with curiosity, coffee, and countless brews.
+        </p>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-copy">
+            © 2026 Bhavya Balchandani · All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+</section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/coffeeData.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/passport.js"></script>
+    <script src="js/brewData.js"></script>
+    <script src="js/brews.js"></script>
+    <script src="js/recipeModal.js"></script>
+    <script src="js/galleryData.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>
