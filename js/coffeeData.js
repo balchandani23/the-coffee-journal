@@ -8,7 +8,7 @@ const coffeeData = [
     brew: "Cold Brew",
     roast: "Light",
     rating: "★★★★★",
-    altitude: "1100-1200 mt",
+    date: "1100-1200 mt",
     reviewTitle: "Bright, Elegant & Endlessly Drinkable.",
     review: "One of the coffees that made me appreciate lighter roasts. Vibrant notes of orange and peach blend effortlessly with a delicate black tea finish, creating a cup that's crisp, refreshing, and beautifully balanced from the first sip to the last."
 },
