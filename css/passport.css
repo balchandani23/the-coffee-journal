@@ -94,7 +94,7 @@ CARD
 
     justify-content:space-between;
 
-    height:208px;
+    height:235px;
 
     border-radius:18px;
 
@@ -213,9 +213,9 @@ HEADER
 
     grid-template-columns:72px 1fr;
 
-    gap:16px;
+    gap:18px;
 
-    padding:18px;
+    padding:18px 18px 14px;
 
     align-items:start;
 
@@ -318,7 +318,7 @@ CONTENT
 
     display:block;
 
-    font-size:.58rem;
+    font-size:.54rem;
 
     letter-spacing:3px;
 
@@ -330,9 +330,11 @@ CONTENT
 
 .passport-content h3{
 
-    font-size:1.18rem;
+    font-size:1rem;
 
-    line-height:1.08;
+    line-height:1.15;
+
+    min-height:58px;
 
     margin-bottom:8px;
 
@@ -376,9 +378,9 @@ CONTENT
 
 .passport-content p{
 
-    font-size:.72rem;
+    font-size:.66rem;
 
-    line-height:1.55;
+    line-height:1.45;
 
     color:#5b5b5b;
 
@@ -406,7 +408,7 @@ FOOTER
 
     background:rgba(255,255,255,.18);
 
-    padding:10px 0;
+    padding:12px 0;
 
     transition:
         background .35s ease;
@@ -449,7 +451,11 @@ FOOTER
 
 .passport-footer strong{
 
-    font-size:.72rem;
+    font-size:.63rem;
+
+    line-height: 1.25;
+
+    overflow-wrap: anywhere;
 
     font-weight:600;
 
