@@ -3,7 +3,7 @@ const coffeeData = [
     id: "TCJ • 001",
     name: "Seethargundu Estate-Light",
     roaster: "Blue Tokai Coffee Roasters",
-    origin: "Nelliyampathy@KL",
+    origin: "Kerela",
     process: "Washed",
     brew: "Cold Brew",
     roast: "Light",
