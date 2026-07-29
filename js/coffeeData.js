@@ -100,7 +100,7 @@ const coffeeData = [
 {
     id: "TCJ • 008",
     name: "Project Young Gun",
-    roaster: "SUBKO Specialty Coffee Roasters",
+    roaster: "SUBKO",
     origin: "Kerehaklu Estate",
     process: "76 Hrs Anoxic Naturals",
     brew: "Aeropress, French Press",
@@ -156,7 +156,7 @@ const coffeeData = [
 {
     id: "TCJ • 012",
     name: "Whiskey Barrel Aged",
-    roaster: "Siolim Specialty Coffee Roasters",
+    roaster: "Siolim",
     origin: "Ratnagiri Estate",
     process: "Natural",
     brew: "Aeropress, French Press",
