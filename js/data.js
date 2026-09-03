@@ -544,6 +544,222 @@ const COFFEES = [
       },
     ],
   },
+
+  {
+  title: "Project Yung Gun",
+  roaster: "Subko",
+  origin: "India",
+  category: "Single Origin",
+  flavorTags: ["Chocolate", "Caramel", "Nuts"],
+  rating: 4.0,
+  notes:
+    "Rich and balanced with chocolate sweetness, caramelized sugar, and a nutty finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 3.0,
+        sweetness: 4.0,
+        body: 4.5,
+        clarity: 3.0,
+        aftertaste: 4.0,
+      },
+    },
+  ],
+},
+
+{
+  title: "Warsanlyngdoh Coffee Collective",
+  roaster: "Blue Tokai Coffee Roasters",
+  origin: "Meghalaya, India",
+  category: "Single Origin",
+  flavorTags: ["Stone Fruit", "Caramel", "Citrus"],
+  rating: 4.5,
+  notes:
+    "Bright and juicy with delicate fruit acidity, caramel sweetness, and a clean, lingering finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 4.5,
+        sweetness: 4.5,
+        body: 3.5,
+        clarity: 4.5,
+        aftertaste: 4.0,
+      },
+    },
+  ],
+},
+
+{
+  title: "M.S Estate",
+  roaster: "Blue Tokai Coffee Roasters",
+  origin: "Chikmagalur, Karnataka, India",
+  category: "Single Origin",
+  flavorTags: ["Chocolate", "Caramel", "Nuts"],
+  rating: 4.0,
+  notes:
+    "Smooth and chocolate-forward with caramel sweetness, roasted nuts, and a rounded body.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 2.5,
+        sweetness: 4.0,
+        body: 4.5,
+        clarity: 3.0,
+        aftertaste: 4.0,
+      },
+    },
+  ],
+},
+
+{
+  title: "Frozen Cherry Naturals",
+  roaster: "Coffeeverse",
+  origin: "India",
+  category: "Single Origin",
+  flavorTags: ["Cherry", "Red Fruits", "Chocolate"],
+  rating: 4.5,
+  notes:
+    "Juicy and fruit-forward with intense cherry sweetness, ripe red fruit character, and a rich natural-process finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 4.5,
+        sweetness: 5.0,
+        body: 4.0,
+        clarity: 4.0,
+        aftertaste: 4.5,
+      },
+    },
+  ],
+},
+
+{
+  title: "Signature",
+  roaster: "Araku",
+  origin: "Araku Valley, Andhra Pradesh, India",
+  category: "Blend",
+  flavorTags: ["Chocolate", "Caramel", "Hazelnut"],
+  rating: 4.0,
+  notes:
+    "Smooth and approachable with rich chocolate, caramel sweetness, roasted hazelnuts, and a balanced finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 2.5,
+        sweetness: 4.0,
+        body: 4.5,
+        clarity: 3.0,
+        aftertaste: 4.0,
+      },
+    },
+  ],
+},
+
+{
+  title: "Thogarihunkal",
+  roaster: "Blue Tokai Coffee Roasters",
+  origin: "Chikmagalur, Karnataka, India",
+  category: "Single Origin",
+  flavorTags: ["Chocolate", "Caramel", "Roasted Nuts"],
+  rating: 4.0,
+  notes:
+    "Comforting and full-bodied with cocoa, caramelized sweetness, roasted nuts, and a smooth lingering finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 2.5,
+        sweetness: 4.0,
+        body: 4.5,
+        clarity: 3.0,
+        aftertaste: 4.0,
+      },
+    },
+  ],
+},
+
+{
+  title: "Baarbara Estate",
+  roaster: "WAQA",
+  origin: "India",
+  category: "Single Origin",
+  flavorTags: ["Berry", "Chocolate", "Caramel"],
+  rating: 4.5,
+  notes:
+    "Sweet and expressive with ripe berry notes, caramelized sugar, chocolate depth, and a clean finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 4.0,
+        sweetness: 4.5,
+        body: 4.0,
+        clarity: 4.0,
+        aftertaste: 4.5,
+      },
+    },
+  ],
+},
+
+{
+  title: "Hidden Fall Estate",
+  roaster: "Blue Tokai Coffee Roasters",
+  origin: "Chikmagalur, Karnataka, India",
+  category: "Single Origin",
+  flavorTags: ["Chocolate", "Caramel", "Stone Fruit"],
+  rating: 4.0,
+  notes:
+    "Balanced and sweet with cocoa richness, caramel sweetness, subtle stone fruit, and a smooth body.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 3.0,
+        sweetness: 4.0,
+        body: 4.5,
+        clarity: 3.5,
+        aftertaste: 4.0,
+      },
+    },
+  ],
+},
+
+{
+  title: "Seethargundu Estate",
+  roaster: "Blue Tokai Coffee Roasters",
+  origin: "Nelliyampathy, Kerala, India",
+  category: "Single Origin",
+  flavorTags: ["Chocolate", "Caramel", "Dried Fruit"],
+  rating: 4.0,
+  notes:
+    "Rich and rounded with dark chocolate, caramel sweetness, dried fruit complexity, and a lingering finish.",
+  recipes: [
+    {
+      method: "Moka Pot",
+      lastBrewed: "2025-08-01",
+      tasteProfile: {
+        acidity: 3.0,
+        sweetness: 4.0,
+        body: 4.5,
+        clarity: 3.5,
+        aftertaste: 4.5,
+      },
+    },
+  ],
+},
 ];
 
 const BREW_METHODS = [
